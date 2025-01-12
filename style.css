@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: grey;
+  /* max-width: 2000px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  min-width: 100vw;
+}
+
+.header {
+  background-color: lightblue;
+  display: flex;
+}
+
+.headshot {
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 50vw;
+  background-image: url("/images/pexels-tima-miroshnichenko-5439172.jpg");
+  background-size: cover;
+}
+
+.aboutMe {
+  background-color: white;
+  width: 50vw;
+}
+
+.myWork {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.projects {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project {
+  margin: 2px;
+  border: 1px solid black;
+}
+
+.projectScreenshot {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  width: 100vw;
+  background-color: lightgrey;
+}
+
+. .projectScreenshot {
+  color: white;
+  height: 50px;
+}
