@@ -5,49 +5,59 @@
 
 body {
   background-color: grey;
-  /* max-width: 2000px; */
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+
   /* justify-content: center; */
-  min-width: 100vw;
+  /* min-width: 100vw; */
 }
 
 .header {
-  background-color: lightblue;
+  background-color: teal;
   display: flex;
 }
 
 .headshot {
   color: white;
+  min-height: 300px;
+  min-width: 400px;
 
   display: flex;
   justify-content: center;
   align-items: end;
-  width: 50vw;
+
   background-image: url("/images/pexels-tima-miroshnichenko-5439172.jpg");
   background-size: cover;
 }
 
 .aboutMe {
   background-color: white;
-  width: 50vw;
+  padding: 20px;
 }
 
 .myWork {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  background-color: rgb(237, 237, 237);
 }
 
 .projects {
-  background-color: white;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.header,
+.myWork {
+  padding: 30px;
 }
 
 .project {
-  margin: 2px;
   border: 1px solid black;
 }
 
@@ -56,15 +66,45 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 200px;
+}
+
+.firstRow {
+  background-color: white;
+  padding: 10px;
+}
+
+.projectScreenshot {
+  color: white;
+  height: 50px;
 }
 
 .footer {
   display: flex;
-  width: 100vw;
-  background-color: lightgrey;
+  max-height: 500px;
+  width: 100%;
+
+  background-color: teal;
+
+  justify-content: space-between;
 }
 
-. .projectScreenshot {
-  color: white;
-  height: 50px;
+.footerLeft,
+.footerRight {
+  padding: 30px;
+}
+
+.footerRight {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-width: 300px;
+}
+
+.footerRight > img {
+  height: 100%;
+  width: auto;
+  max-width: 500px;
 }
