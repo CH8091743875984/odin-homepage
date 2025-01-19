@@ -1,12 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-@media (max-width: 500px) {
-  .projects {
-    grid-template-columns: repeat(1, 1fr);
-  }
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
 body {
@@ -28,8 +23,9 @@ body {
 
 .headshot {
   color: white;
-  min-height: 300px;
+  /* min-height: 300px; */
   min-width: 400px;
+  height: 400px;
 
   display: flex;
   justify-content: center;
@@ -65,6 +61,7 @@ body {
 
 .project {
   border: 1px solid black;
+  box-shadow: 3px 3px 3px grey;
 }
 
 .projectScreenshot {
@@ -78,6 +75,13 @@ body {
 .firstRow {
   background-color: white;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectDescription {
+  background-color: white;
+  padding: 0px 10px 10px 10px;
 }
 
 .projectScreenshot {
@@ -98,6 +102,13 @@ body {
 .footerLeft,
 .footerRight {
   padding: 30px;
+  color: white;
+}
+
+.footerLeft > .phone > img,
+.footerLeft > .email > img {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(360deg)
+    brightness(200%) contrast(100%);
 }
 
 .footerRight {
